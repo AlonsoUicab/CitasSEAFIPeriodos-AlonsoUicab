@@ -1,0 +1,33 @@
+<svg id="a5a13b39-55a7-4b4a-a23c-c427e3bc0dfc" data-name="Capa 7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 301.01">
+  <defs>
+    <style>
+      .aa84de1d-172d-4021-ad7e-990f9aa3e7a4 {
+        fill: none;
+      }
+
+      .b99299ce-1d43-478a-b6ad-76ed83ccd620 {
+        fill: #6b1c31;
+      }
+
+      .bc0e05f2-c063-4087-81b8-9b6abd69b5d9 {
+        fill: #a02142;
+        opacity: 0.2;
+      }
+
+      .ad50ff60-fcd9-448e-a840-c2aadd8c4396 {
+        fill: url(#b89b0b74-7248-482e-aad3-099cc7db428d);
+      }
+    </style>
+    <pattern id="b89b0b74-7248-482e-aad3-099cc7db428d" data-name="Motivo nuevo 3" width="960" height="841.89" patternTransform="translate(-914.94 -329.04) rotate(30) scale(0.7)" patternUnits="userSpaceOnUse" viewBox="0 0 960 841.89">
+      <rect class="aa84de1d-172d-4021-ad7e-990f9aa3e7a4" width="960" height="841.89"/>
+      <rect class="b99299ce-1d43-478a-b6ad-76ed83ccd620" width="960" height="841.89"/>
+      <g>
+        <rect class="bc0e05f2-c063-4087-81b8-9b6abd69b5d9" width="130" height="841.89"/>
+        <rect class="bc0e05f2-c063-4087-81b8-9b6abd69b5d9" x="240" width="130" height="841.89"/>
+        <rect class="bc0e05f2-c063-4087-81b8-9b6abd69b5d9" x="480" width="130" height="841.89"/>
+        <rect class="bc0e05f2-c063-4087-81b8-9b6abd69b5d9" x="720" width="130" height="841.89"/>
+      </g>
+    </pattern>
+  </defs>
+  <rect class="ad50ff60-fcd9-448e-a840-c2aadd8c4396" width="1000" height="301.01"/>
+</svg>

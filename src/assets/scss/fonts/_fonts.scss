@@ -1,0 +1,77 @@
+//
+// Google font - Poppins
+//
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+//
+// Premium Font : HKGrotesk
+//
+
+@font-face {
+    font-family: "hkgrotesk";
+    src: url("~@/assets/fonts/hkgrotesk-light.eot");
+    src: local('hkgrotesk light'), url("~@/assets/fonts/hkgrotesk-light.woff") format("woff");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "hkgrotesk";
+    src: url("~@/assets/fonts/hkgrotesk-regular.eot");
+    src: local('hkgrotesk regular'), url("~@/assets/fonts/hkgrotesk-regular.woff") format("woff");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "hkgrotesk";
+    src: url("~@/assets/fonts/hkgrotesk-medium.eot");
+    src: local('hkgrotesk medium'), url("~@/assets/fonts/hkgrotesk-medium.woff") format("woff");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "hkgrotesk";
+    src: url("~@/assets/fonts/hkgrotesk-semibold.eot");
+    src: local('hkgrotesk semibold'), url("~@/assets/fonts/hkgrotesk-semibold.woff") format("woff");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "hkgrotesk";
+    // src: url("~@/assets/fonts/hkgrotesk-bold.eot");
+    src: local('hkgrotesk bold'), url("~@/assets/fonts/hkgrotesk-bold.woff") format("woff");
+    font-weight: 700;
+}
+
+//
+// Institutional Font : Quatro Slab
+//
+
+@font-face {
+    font-family: "QuatroSlab";
+    src: url("~@/assets/fonts/quatro/QuatroSlab-Italic.eot");
+    src: local('QuatroSlab light'), url("~@/assets/fonts/quatro/QuatroSlab-Italic.woff") format("woff");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "QuatroSlab";
+    src: url("~@/assets/fonts/quatro/QuatroSlab-Regular.eot");
+    src: local('QuatroSlab regular'), url("~@/assets/fonts/quatro/QuatroSlab-Regular.woff") format("woff");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "QuatroSlab";
+    src: url("~@/assets/fonts/quatro/QuatroSlab-Medium.eot");
+    src: local('QuatroSlab medium'), url("~@/assets/fonts/quatro/QuatroSlab-Medium.woff") format("woff");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "QuatroSlab";
+    src: url("~@/assets/fonts/quatro/QuatroSlab-SemiBold.eot");
+    src: local('QuatroSlab semibold'), url("~@/assets/fonts/quatro/QuatroSlab-SemiBold.woff") format("woff");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "QuatroSlab";
+    src: url("~@/assets/fonts/quatro/QuatroSlab-Bold.eot");
+    src: local('QuatroSlab bold'), url("~@/assets/fonts/quatro/QuatroSlab-Bold.woff") format("woff");
+    font-weight: 700;
+}
