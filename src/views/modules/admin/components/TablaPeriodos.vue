@@ -161,7 +161,6 @@ const agregarPeriodo = async (idPeriodo) => {
   } else {
 
     try {
-      //const vld = await PeriodosService.ObtenerListaPeriodos(idPeriodo, state.nombrePeriodo, UtilsDate.toDayMonthYear(state.fechaInicio), UtilsDate.toDayMonthYear(state.fechaFin), state.activo)
       const date = await NotificacionesRecepcion.ValidarDiaInhabil(state.fechaInicio, 'Agregar')
 
       if (date.isConfirmed) {
@@ -252,6 +251,7 @@ onMounted(() => {
         </div>
       </div>
     </div>
+    <!--Se crea la lista para poder mostrar la información de los distintos periodos almacenados-->
     <div class="card-body">
       <div class="flex-grow-1 overflow-hidden">
         <div class="table-responsive">
