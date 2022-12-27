@@ -266,6 +266,7 @@ onMounted(() => {
               <th class="sort text-center">Acciones</th>
             </tr>
             </thead>
+            <!--Se hace el recorrido para desplegar los datos-->
             <tbody>
             <tr v-for="(diasPeriodo, index) in diasPeriodo">
               <th scope="row">{{index + 1}}</th>
@@ -282,12 +283,14 @@ onMounted(() => {
                     <i class="mdi mdi-dots-horizontal"></i>
                   </button>
                   <ul class="dropdown-menu">
+                    <!--Botón para modificar un periodo-->
                     <li>
                       <a class="dropdown-item" style="cursor: pointer" @click="mostrarModal(diasPeriodo.idPeriodo, index)">
                         <i class="mdi mdi-calendar-edit mdi-18px align-center me-2 text-seafi-aqua"></i>
                         Editar
                       </a>
                     </li>
+                    <!--Botón para eliminar un periodo-->
                     <li>
                       <a class="dropdown-item" style="cursor: pointer" @click="eliminarPeriodo(diasPeriodo.idPeriodo, UtilsDate.toDayMonthYear(diasPeriodo.fechaInicio))">
                         <i class="mdi mdi-calendar-remove mdi-18px align-center me-2 text-seafi-red"></i>
@@ -303,7 +306,7 @@ onMounted(() => {
           </table>
         </div>
       </div>
-
+      <!--Inicio de la paginación-->
       <div class="text-center" v-if="cargandoDatos">
         <div class="spinner">
           <div class="bounce1"></div>
@@ -347,6 +350,8 @@ onMounted(() => {
         </div>
       </div>
     </div>
+    <!--Fin de la paginacion-->
+    <!--Inicio del componente modal-->
     <ModalComponent ref="modalPeriodo">
       <template #header>
         <h5 class="modal-title"><span>{{isNew === true ? 'Nuevo' : 'Modificar'}}</span> Período</h5>
@@ -360,6 +365,7 @@ onMounted(() => {
               style="font-size:100px;"
           ></i>
         </div>
+        <!--Apartado del Nombre-->
         <div class="mb-3">
           <label class="form-label">Nombre del Período
             <span class="text-danger">*</span>
@@ -377,6 +383,7 @@ onMounted(() => {
             <span class="text-danger" v-if="item.$message">{{ item.$message }}</span>
           </div>
         </div>
+        <!--Apartado de la fecha inicio-->
         <div class="mb-3">
           <label class="form-label">Fecha Inicio<span
               class="text-danger">*</span></label>
@@ -393,6 +400,7 @@ onMounted(() => {
             <span class="text-danger" v-if="item.$message">{{ item.$message }}</span>
           </div>
         </div>
+        <!--Apartado de la fecha fin-->
         <div class="mb-3">
           <label class="form-label">Fecha Fin<span
               class="text-danger">*</span></label>
@@ -409,6 +417,7 @@ onMounted(() => {
             <span class="text-danger" v-if="item.$message">{{ item.$message }}</span>
           </div>
         </div>
+        <!--Apartado del activo-->
         <div
             class="form-switch form-switch-lg form-check-seafi-aqua"
             dir="ltr" >
@@ -436,6 +445,7 @@ onMounted(() => {
         </div>
       </template>
     </ModalComponent>
+    <!--Fin del componente modal-->
   </div>
 </template>
 
