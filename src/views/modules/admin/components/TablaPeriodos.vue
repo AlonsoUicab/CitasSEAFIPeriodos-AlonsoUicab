@@ -113,10 +113,8 @@ const mostrarModal = async (idPeriodo, index)=>{
 
     state.idPeriodo = dato.idPeriodo
     state.nombrePeriodo = dato.nombrePeriodo
-    let fechaConvertidaInicio = UtilsDate.toDayMonthYear(dato.fechaInicio)
-    state.fechaInicio = fechaConvertidaInicio
-    let fechaConvertidaFin = UtilsDate.toDayMonthYear(dato.fechaFin)
-    state.fechaFin = fechaConvertidaFin
+    state.fechaInicio = UtilsDate.toDayMonthYear(dato.fechaInicio)
+    state.fechaFin = UtilsDate.toDayMonthYear(dato.fechaFin)
     state.activo = dato.activo
   }
   modalPeriodo.value.show()
