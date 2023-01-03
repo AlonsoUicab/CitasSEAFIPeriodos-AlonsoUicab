@@ -168,7 +168,7 @@ const agregarPeriodo = async (idPeriodo) => {
       if (date.isConfirmed) {
         try {
           PantallaCarga.mostrar()
-          const resp = await PeriodosService.agregarPeriodo(idPeriodo, state.nombrePeriodo, UtilsDate.toDayMonthYear(state.fechaInicio), UtilsDate.toDayMonthYear(state.fechaFin), state.activo)
+          const resp = await PeriodosService.agregarPeriodo('', state.nombrePeriodo, UtilsDate.toDayMonthYear(state.fechaInicio), UtilsDate.toDayMonthYear(state.fechaFin), state.activo)
           await modalPeriodo.value.hide()
           if (resp) {
             await NotificacionesModal.PantallaExito('Periodo Agregado con Éxito');
@@ -185,27 +185,6 @@ const agregarPeriodo = async (idPeriodo) => {
       }
     }catch (e) {
 
-
-      const resp = await NotificacionesCitas.Continuar(e)
-      if (resp.isConfirmed) {
-        try {
-          PantallaCarga.mostrar()
-          const resp = await PeriodosService.agregarPeriodo(idPeriodo, state.nombrePeriodo, UtilsDate.toDayMonthYear(state.fechaInicio), UtilsDate.toDayMonthYear(state.fechaFin), state.activo)
-          await modalPeriodo.value.hide()
-          if (resp) {
-            await NotificacionesModal.PantallaExito('Periodo Agregado con Éxito');
-
-          }
-          await limpiarModal()
-
-
-        } catch (error) {
-          await NotificacionError.Agendar(error)
-        } finally {
-          PantallaCarga.ocultar()
-          await cargarDatos();
-        }
-      }
     }
   }
 }
